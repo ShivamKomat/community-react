@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "id": "f931",
+      "firstName": "SHIVAM",
+      "lastName": "KOMAT",
+      "age": "22",
+      "email": "komatshivam20@gmail.com",
+      "gender": "male",
+      "work": "full-time",
+      "device": "poco",
+      "spirit": "raccon"
+    },
+    {
+      "id": "1db9",
+      "firstName": "Aryan ",
+      "lastName": "rathore",
+      "age": "22",
+      "email": "komatshivam@gmail.com",
+      "gender": "male",
+      "work": "full-time",
+      "device": "Samsung",
+      "spirit": "hubertus"
+    },
+    {
+      "id": "2fb9",
+      "firstName": "Aryan ",
+      "lastName": "rathore",
+      "age": "22",
+      "email": "komatshivam@gmail.com",
+      "gender": "male",
+      "work": "full-time",
+      "device": "Samsung",
+      "spirit": "hubertus"
+    },
+    {
+      "id": "6cbb",
+      "firstName": "Aryan ",
+      "lastName": "rathore",
+      "age": "22",
+      "email": "komatshivam@gmail.com",
+      "gender": "male",
+      "work": "full-time",
+      "device": "Samsung",
+      "spirit": "hubertus"
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0px ;
+    padding: 0px;
+} 
+body{ 
+    width: 100%; 
+    height: 100vh;
+} 
+/* Navbar  */
+.navbar{
+   background-color: black;
+    position: fixed;  
+   z-index: 2; 
+   width: 100vw; 
+}  
+.nav-link{
+    color: white; 
+    font-size: 1.2vw; 
+    text-transform: uppercase; 
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+.nav-link:hover{
+    color: blue;
+} 
+.navbar-brand{ 
+    width: 45px; 
+    display: flex; 
+   justify-content: center;
+} 
+.btn-primary{ 
+    height: 40px; 
+    width: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black; 
+    border-radius: 50%;
+}   
+.form-control{
+      border-radius: 1rem; 
+      width: 30vw; 
+}   
+
+/* page details  */
+#MainCont{  
+    width: 100%; 
+    display: flex;   
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column; 
+} 
+.topCont{ 
+    height: 70vh;
+     display: flex;
+     align-items: center;  
+     justify-content: center;
+     background-color: black;
+}  
+.topInnerCont,#topInnerCont{
+      height: 60vh; 
+      width: 75vw;  
+      display: flex; 
+      align-items: center; 
+      justify-content: space-evenly; 
+      flex-direction: column;  
+      background-image: linear-gradient(to right , brown, blue);  
+      color: transparent;
+      background-clip: text; 
+}   
+#topInnerCont{
+     border: 1px solid black;
+}
+#topInnerCont{
+      flex-direction: row;
+}
+
+.mainTitle{
+    font-size: 5vw; 
+    color: white; 
+    font-family: "Press Start 2P", system-ui;
+    text-decoration: none;
+}  
+.mainText{
+    font-family: 'Times New Roman', Times, serif; 
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: 800;
+} 
+
+/*  accesibility features  */ 
+.featureMainCont{ 
+      height: 140vh; 
+      width: 100%; 
+      display: grid; 
+      grid-template-columns:repeat(2,1fr) ;  
+      place-content: center;  
+      place-items: center;
+      gap: 2rem; 
+      background-color: black;
+} 
+.featureCont{
+     height: 60vh; 
+     width: 35vw; 
+     border-radius: 1rem;
+     background-color: black; 
+     display: flex; 
+     justify-content: space-evenly; 
+     align-items: center; 
+     flex-direction: column; 
+      color: white; 
+      /* border: 1px solid white; */
+      box-shadow: 2px 2px 4px  4px rgba(255, 255, 255, 0.158); 
+}   
+.featureCont:hover{
+      background-color:rgba(255, 255, 255, 0.158);
+}
+.featTitle{
+    font-family: Arial, Helvetica, sans-serif;  
+    background-image: linear-gradient(45deg , brown , blue);  
+    color: transparent;
+    background-clip: text;
+    font-size: 30px;
+}
+.featText{ 
+    font-size: 10px; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+} 
+.title-height{
+     font-size:2vw ;
+}
+ .vid{
+     height: 30vh; 
+     width: 35vw;
+}   
+.img{
+     height: 30vh; 
+     width: 30vw;
+}
+
+#head{
+    height: 45vh; 
+    width: 100%; 
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly; 
+    background-color: black; 
+    color: white; 
+    border-bottom: 1px solid white;
+} 
+.headDetails{
+    height: 30vh; 
+    width: 45vw;  
+    display: flex;
+    /* align-items: center;  */
+    justify-content: center; 
+    flex-direction: column; 
+} 
+#str-head1{
+   font-size: 4vw; 
+   text-transform: uppercase; 
+   text-shadow: 1px 1px 0 white; 
+   color: black; 
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+} 
+#str-head2{
+  font-size: 3.5vw; 
+  text-transform: uppercase; 
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+
+} 
+#gradeText{
+    background-image: linear-gradient(45deg , brown , blue); 
+    color: transparent; 
+    background-clip: text; 
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 2rem;
+    font-size: 20px;
+}  
+#gradeDetails{
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: 15px; 
+   line-height: 1.8rem;
+   text-transform: capitalize;
+}  
+/* page 2 details  */
+.page2{
+   height: 100vh; 
+   max-width: 100vw; 
+   background-color: black; 
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); 
+   place-items: center;
+   place-content: center; 
+   row-gap: 1rem; 
+   column-gap: 1rem;
+} 
+.feat{
+    height: 30vh; 
+    width: 30vw; 
+    display: flex;
+    justify-content: center;  
+    background-color: rgba(224, 221, 221, 0.5); 
+    border-radius: 1rem; 
+    box-shadow: inset 2px 2px 2px  2px rgba(255, 255, 255, 1); 
+
+} 
+.feat:hover{
+   background-color: rgba(224, 221, 221, 0.4); 
+   box-shadow: 2px 2px 2px  2px rgba(255, 255, 255, 1); 
+
+}
+.featInner{
+   height: 30vh; 
+   /* width: 8vw;  */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center; 
+  flex-direction: column;  
+  
+}  
+.circle{ 
+   height: 8vh; 
+   width: 5vw; 
+   color: rgb(221, 255, 0); 
+   font-size: 1.5rem;
+   border: 2px solid rgb(187, 255, 0); 
+   border-radius: 50%; 
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+} 
+.featDeta{
+   color: white; 
+   text-transform: uppercase;
+} 
+
+.circle:hover{
+   transform: scale(1.1);
+} 
+/* footer part */
+
+.footerCont{
+   height: 40vh; 
+   width: 100%;
+   background-color: white; 
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column; 
+   border-top: 1px solid white;
+} 
+.cont1{ 
+   height: 10vh; 
+   width: 25vw;
+   background-color:#ffff; 
+   display: flex;
+} 
+.cont2{
+      width: 30vw; 
+      display: flex;  
+      justify-content: space-evenly;
+} 
+.text1{
+   text-transform: uppercase; 
+   font-weight: bold; 
+} 
+
+/* _________________________ resources _____________________________ */ 
+ 
+/*  main container  */ 
+#resources{
+   width: 100%;  
+   height: 80vh;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-evenly;  
+  transition: all 1s;
+}
+/* intro & review  */
+#start {
+   height: 70vh; 
+   width: 80vw; 
+   display:flex;  
+   align-items: center;
+   justify-content: center; 
+   background-color: gray; 
+   border-radius: 2rem;
+}   
+/* review cont   */
+#reviewsCont{
+   height: 70vh; 
+   width: 80vw; 
+   display:none;  
+   align-items: center;
+   justify-content: space-evenly; 
+   background-color: gray; 
+   border-radius: 2rem; 
+   overflow: hidden;
+}
+#revInnerCont{
+   height: 70vh; 
+   width: 80vw;   
+   display: flex;   
+   align-items: center; 
+   justify-content: space-evenly; 
+   flex-direction: column;  
+} 
+.review{
+   height: 15vh; 
+   width: 65vw;  
+   display: flex; 
+   align-items: center; 
+   justify-content: space-evenly;
+   background-color: black;   
+   border-bottom: 1px solid white;
+}   
+.readButton{
+    height: 6vh; 
+    width: 10vw;  
+    border: none;
+    outline: none;
+    background-color: white; 
+    border-radius: 1rem; 
+    font-size: 1.2vw; 
+    letter-spacing: 1px;
+}
+.readButton:active{
+    background-color: gray; 
+    color: white;
+}
+.titleCont{
+    width: 50vw;
+}
+.revSubTitle{
+    color: white;
+} 
+.searchBar{ 
+   width: 25vw; 
+   height: 7vh; 
+   display: flex; 
+   align-items: center; 
+   justify-content: space-evenly;
+    background-color: white; 
+    border-radius: 1rem;
+} 
+.inp{
+   width: 20vw; 
+   outline: none;
+   border: none; 
+}
+#marioImg{
+   height: 50vh; 
+   width: 30vw;
+}
+
+/*  tutorial */ 
+#tutorials{ 
+   height: 70vh; 
+   width: 80vw; 
+   display:none;  
+   align-items: center;
+   justify-content: center; 
+   background-color: gray;
+    flex-direction: column; 
+    border-radius: 2rem;
+} 
+#tutoSubCont{ 
+   width:100% ;
+   display: flex;  
+   align-items: center;
+   justify-content: space-evenly; 
+   /* background-color: #ffff; */
+}  
+.tutoCont{
+    height: 40vh;  
+    width: 22vw;
+    border: 1px solid black; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-direction: column; 
+    border-radius: 1rem;
+} 
+#tutoTitle ,.startTitle{ 
+   width: 45vw;
+   font-size: 5vw; 
+   font-family: Arial, Helvetica, sans-serif;  
+   background-image: linear-gradient(45deg , brown , blue); 
+   background-clip: text; 
+   color: transparent;
+}
+/*  to navigate resource  */ 
+.resourceBtn{
+   height: 15vh; 
+   width: 3.5vw; 
+   font-size: 2vw; 
+   background-color: gray; 
+   border: none;
+   outline: none; 
+   color: white; 
+   border-radius: 1rem;
+} 
+.resourceBtn:active{
+    background-color: darkgrey;
+}
+
+
+/*  responsive  */
+@media only screen and (max-width: 768px){
+    .mainText{
+        text-align: center !important;
+    }
+    .featureCont{
+        padding: 4px !important;
+    }
+    .featTitle{
+        font-size: 20px;
+    }
+    #head{
+        height: 300px !important;
+        margin-top: 60px;
+
+    }
+    .page2{
+        margin-top: 20px;
+    }
+    .feat{
+        font-size: 15px !important;
+        text-align: center !important;
+        padding: 4px !important;
+    }
+    .circle{
+        border: none !important;
+    }
+
+
+    #resources{
+            margin: 30px 0;
+            padding: 10px;
+
+    }
+    #start{
+        flex-direction: column !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 20px;
+    }
+    #start span{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        width: 90%;
+        height: 100%; 
+        text-align: justify;
+        margin: 10px;
+        font-size: 14px;
+        padding: 10px;
+        gap: 10px;
+    }
+    .startTitle{
+        font-size: 20px !important;
+        width: 100% !important;
+    }
+    .startText{
+        /* display: none; */
+
+    }
+    #marioImg{
+        width: 15% !important;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+    .resourceBtn{
+        background-color: black !important;
+        font-size: 20px !important;
+        font-weight: 900;
+    }
+
+    #tutorials{
+        height: 100% !important;
+        width: 100% !important;
+        background-color: black !important;
+        color: white;
+
+    }
+    #tutorials .span1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    #tutoSubCont{
+        padding: 10px;
+        gap: 15px;
+
+    }
+    .tutoCont{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        width: 100%;
+        gap: 20px;
+        border: none !important;
+        box-shadow:  1px 1px 2px 4px rgba(255, 255, 255, 0.9);
+    }
+    .tutoCont img{
+        width: 70px !important;
+        height: 70px;
+    }
+    .tutoCont .tutoText{
+        text-align: center;
+        text-transform: capitalize;
+    }
+    #reviewsCont{
+        height: 420px !important;
+        padding-bottom: 40px;
+    }
+   
+    .searchBar{
+        width: 250px !important;
+        height: 40px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px;
+        margin: 10px ;
+    }
+    .inp{
+        border: none !important;
+        width: 60% !important;
+        height: 60% !important;
+        margin-top: 10px;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+        height: 100% !important;
+        border-radius: 20px;
+        padding: 20px 0;
+    }
+    .review span{
+        gap: 30px;
+        width: 80%;
+       
+    }
+    .review h4{
+        color: blue; letter-spacing: 4px;
+    }
+    .review p{
+        text-align: justify;
+        color: white;
+    }
+    .review .date{
+        color: crimson;
+        font-weight: 800;
+    }
+    #review3 , #review4{
+        display: none;
+    }
+}
+@media only screen and (max-width: 545px){
+   
+    .topCont{
+        width: 150vw;
+        height: 450px;
+        justify-content: center;
+        
+    
+    }
+    .topCont h1{
+        font-size: 30px;
+        font-weight: 700;
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+   
+    .featureMainCont{
+        width: 150vw;
+
+    }
+    .featureCont{
+        width: 60vw;
+    }
+
+    #head{
+        width: 150vw !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        
+    }
+    .headDetails{
+        display: flex;
+        width: 150vw !important;
+    }
+   
+    #str-head1{
+        font-size: 30px !important;
+        margin-bottom: 10px;
+        font-weight: 900;
+    }
+    #str-head2{
+        font-size: 18px !important;
+    }
+    .headDetails:last-child{
+        text-align: center;
+        margin-top: -10px;
+    }
+    #page2{
+        margin-top: 0px;
+        width: 150vw !important;
+        max-width: none;
+        
+    }
+
+    #resources{
+        width: 150vw !important;
+    }
+}
+/* @media (max-width:500px) {
+    .featureMainCont{ 
+        height: 300vh; 
+        width: 100%;
+         display: flex; 
+         flex-direction: column; 
+         align-items: center; 
+         justify-content: space-evenly; 
+
+    } 
+    .featureCont{
+        width: 80vw;
+    }
+    .featTitle{
+        font-size: 20px;
+    }
+    .featText{
+        font-size: 8px;
+    }  
+    .vid{
+        height: 60vh; 
+        width: 60vw;
+    }
+    .img{
+        height: 30vh; 
+        width: 60vw;
+    } 
+  
+    .cont2{ 
+         position: relative; 
+         right: 2rem;
+    
+    } 
+    .text1{
+         font-size: 1px; 
+         font-weight: lighter; 
+    } 
+     
+    
+    
+    .tutoCont{
+        height: 30vh; 
+        
+    }
+    .tutoImg{
+        width: 90px;
+    
+    } 
+    .tutoText{
+         font-size: 1rem;
+    } 
+   
+}    */
+/*  page 2 */ 

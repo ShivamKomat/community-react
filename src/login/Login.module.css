@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.left{
+    width: 800px;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 45% 100%, 0% 100%);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    padding-top: 80px;
+}
+.signinform{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 300px;
+    width: 350px;
+    gap: 30px;
+ 
+    
+}
+.signinform .inp{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    height: 30px;
+    background-color: none;
+    outline: none;
+    
+}
+
+.signinform .inp::placeholder{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+
+}
+.signinform .submit{
+    width: 200px;
+    height: 40px;
+    font-size: 23px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(20, 6, 213);
+    color: white;
+}
+
+.signinform p{
+    font-size: 15px;
+}
+span{
+    display: flex;
+    justify-content: space-between;
+}
+span a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+.google{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width:25vw;
+    height: 30px;
+    font-size: 16px;
+    background-color: grey;
+}
+
+.botton{
+    display: none;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 0 !important;
+
+    }
+    .left{
+    
+        clip-path: polygon(100% 0, 0 100%, 0 0);
+        height: 500px;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background-color: black !important;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        width: 300px;
+        gap: 30px;
+        position: relative;
+        left: 20%;
+        padding: 0;
+    }
+    .siginform{
+        width: 100%;
+        height: 100%;
+    }
+    .siginform input{
+    height: 20px;
+    width: 90%;
+    }
+    .siginform input::placeholder{
+         font-size: 20px;
+    }
+    .siginform button{
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .botton{
+        display: block;
+        width: 100vw;
+        height: 600px; 
+    }
+
+    /* .container{
+        display: flex;
+        flex-direction: column;
+    } */  
+  }
+
+
+  

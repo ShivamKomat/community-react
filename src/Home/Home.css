@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0px ;
+    padding: 0px;
+}  
+.body{ 
+    width: 100vw; 
+    background-color: black; 
+} 
+/* Navbar  */
+.navbar{
+   background-color: black;
+    position: fixed;  
+   z-index: 2; 
+   width: 100%;
+}  
+
+.nav-link{
+    color: white; 
+    font-size: 0.8vw; 
+    text-transform: uppercase; 
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+} 
+.nav-link:hover{
+    color: blue;
+} 
+.navbar-brand{ 
+    width: 100px !important; 
+    display: flex; 
+   justify-content: center; 
+   gap: 30px;
+} 
+.btn-primary{ 
+    height: 40px; 
+    width: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black; 
+    border-radius: 50%;
+}   
+.form-control{
+      border-radius: 1rem; 
+      width: 30vw; 
+}  
+/*  player profile  */ 
+.offcanvas-start{
+    background-color: black; 
+    width: 200px;
+}   
+.offcanvas-title{
+    font-family: "Press Start 2P", system-ui; 
+    text-transform: capitalize !important;
+    color: white; 
+} 
+.name{
+     text-transform: uppercase; 
+     font-weight: bold; 
+}
+.btn-close{
+    background-color: white;
+} 
+.profile{
+    width: 100%; 
+    display: flex; 
+    justify-content: space-evenly;
+    
+}  
+.profile > img {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+}
+.nameContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.personal-details{
+     display: grid; 
+     grid-template-columns: repeat(2,1fr);
+     gap:20px;
+     margin-top: 20px;
+} 
+.name{
+   width: 80%;
+   height: 30px;
+}
+ .state{
+     text-transform: uppercase; 
+     background-color: rgb(157, 84, 224);  
+     color: white;
+     width: 10vw; 
+     display: flex; 
+     align-items: center; 
+     justify-content: center;  
+     font-family:fantasy; 
+     letter-spacing: 2px; 
+     font-size: 1.2rem;
+ } 
+ .game-details{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+ }
+ .state-2{
+    text-transform: uppercase;
+    color: rgba(134, 4, 255, 0.877); 
+    font-family: "Press Start 2P", system-ui;  
+    font-size: 20px;
+    margin: 10px 20px;
+ } 
+ .stateCont{
+   flex-direction: column;
+   align-items: center;
+ }
+ .state-det{
+   color: white;
+   font-weight: 600;
+   text-transform: capitalize;
+ }
+ .game-details img{
+   width: 100px;
+   height: 80px;
+ }
+ #recentGame{
+     display: flex; 
+     justify-content: space-evenly;
+     gap:20px;
+ }
+  /* ______________________________ welcome page_________________________   */ 
+ .welcomePage{
+    height: 95vh; 
+    width: 100vw; 
+    background-color:transparent; 
+    position:relative ; 
+    top: 5vw; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly;  
+    backdrop-filter: blur(12px);
+ } 
+ .welCont{ 
+    height: 40vh; 
+    width: 90vw;
+    /* background-color: blue; */
+ }  
+ .welTitle{
+      text-align: center; 
+      color: white; 
+      font-size: 4vw; 
+      font-family: "Press Start 2P", system-ui;
+      text-decoration: none;
+ }   
+ .weltop{
+    color: transparent; 
+    text-transform: uppercase; 
+    font-family: "Press Start 2P", system-ui; 
+    background-image: linear-gradient(45deg , gray , black); 
+    background-clip: text;
+ } 
+ #weDet{
+    text-align: center;  
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+ }
+ #getAppBtn{
+    position: absolute; 
+    top: 1.5vw;
+    right: 2rem; 
+    height: 7vh; 
+    width: 9vw; 
+    border: 2px solid white; 
+    background-color: black; 
+    color:white; 
+    border-radius: 1rem; 
+    animation: btn 1s infinite; 
+ }  
+
+ @keyframes btn {
+       to{
+          transform: scale(1.1);
+       }
+ } 
+ #getAppBtn:hover{
+    background-color: red; 
+    color: white;
+ } 
+ #welFirstPage{ 
+      height: 60vh; 
+      width: 100%;
+      border-radius: 2rem;
+      display: flex;  
+      align-items: center;
+      justify-content: space-evenly;
+ } 
+ .wel{
+    height: 40vh; 
+    width: 25vw;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: transparent; 
+    flex-direction: column; 
+    border-radius: 1rem; 
+    border: 1px solid gray;
+ }  
+ .welTopText {
+     color:white;
+ }
+.contBtn{
+      height: 5vh; 
+      width: 9vw;  
+      border: none; 
+      outline: none; 
+      background-color: white; 
+      color: black; 
+      font-family: sans-serif;
+} 
+.contBtn:active{
+     color: white; 
+     background-color: gray;
+}  
+/*  background video */ 
+.bgVideo{
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    /* overflow: hidden;  */
+    position: absolute; 
+    top: 5vw; 
+
+}  
+.backVID{
+    width:100vw ;
+}
+
+/*  Home First Container  */ 
+.PlayerCont{
+     height: 100vh;  
+     width: 100vw; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+    overflow: hidden;   
+} 
+.PlayerImg{
+    height: 60vh ;  
+    width: 300px; 
+    transform: translateX(-250px); 
+    transition: all 0.5s ease-in; 
+} 
+.content{
+     height: 60vh ; 
+     width: 30vw; 
+     transform: translateX(250px);  
+     transition: all 0.5s ease-in; 
+} 
+.title{
+   color:coral; 
+   font-size: 5vw; 
+   text-transform: uppercase; 
+   text-decoration: none;
+
+}  
+.title::first-line{
+    color: white;
+}  
+#StreamBtn{
+    height: 40px; 
+    width: 30vw; 
+    outline: none;
+    border: none; 
+    border-radius: 1rem; 
+    background-color:coral ; 
+    color: white;
+} 
+#StreamBtn:active{
+     background-color: rgb(160, 114, 15);
+}
+
+ /*  on scroll movements  */
+.reveal{
+      color: white;
+      text-decoration: none;
+      text-transform: capitalize;
+      opacity: 0.7;
+}
+ .reveal.active{
+    opacity: 1; 
+    transform: translateX(20px);
+ }   
+
+ /* latest games  */ 
+
+ .gameContainer{ 
+    height: 200vh; 
+    width: 100%;
+    display: grid; 
+    align-items: center; 
+    justify-items: center;
+    grid-template-columns: repeat(3,4fr); 
+    row-gap: 5vw; 
+ }   
+ .game{
+    height: 50vh; 
+    width: 22vw; 
+   border: 1px outset white; 
+   display: flex;
+   align-items: center;  
+   justify-content: space-evenly; 
+   flex-direction: column; 
+   border-radius: 1rem; 
+   transition: all 0.2s ease-in-out;
+ }  
+ .game:hover{
+     background-color: gray; 
+     transform: scale(1.1);
+ }
+ .gameDetails{
+     display: grid; 
+     grid-template-columns: repeat(2,1fr); 
+     column-gap: 7vw;
+     row-gap: 1vw;
+ } 
+ .gameName{
+    color: white;
+ }
+ .gameImg{
+    height: 25vh;
+    width: 20vw; 
+    border-radius: 1rem;
+ } 
+ .fa-star{
+    color: yellow;
+ }
+.Title{
+      font-size: 5vw;  
+      transition: all 2s ease;
+}
+ 
+/* ___________________________________Library  page___________________________  */  
+
+#LibParent{
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    align-items: center;  
+    flex-direction: column; 
+
+}  
+#libTitle{
+     color: white; 
+     font-size: 5vw; 
+     font-family: Arial, Helvetica, sans-serif;  
+     text-decoration: none;
+     text-transform: capitalize;
+}
+.LibContainer{ 
+    height: 80vh; 
+    width: 80%; 
+     display: flex; 
+     align-items: center;  
+     justify-content: space-evenly; 
+     flex-direction: column;  
+     background-color: rgba(128, 128, 128, 0.151); 
+     border-radius: 1rem;
+     gap: 10px;
+} 
+.lib{
+    display: flex;  
+    align-items: center; 
+    column-gap:3vw; 
+    /* background-color: brown;  */
+    border-bottom: 1px solid white;
+}  
+.lib p{
+    color: white;
+}
+.DownBtn{
+    height: 4vw; 
+    width: 12vw; 
+    border:1px solid white ;
+    outline: none; 
+    border-radius: 2rem; 
+    background-color:rgba(128, 128, 128, 0.151);  
+    color: white;
+} 
+.DownBtn:hover{
+    color: coral; 
+    border: 1px solid coral; 
+    background-color: black;
+}
+.libName{
+    color: white; 
+    font-size: 1.5vw;
+} 
+.bg-color{
+    background-color: rgb(231, 135, 151); 
+    color: white;
+    border: none;
+}   
+.bg-color:hover{
+    background-color:white; 
+    color:rgb(219, 111, 129);
+} 
+ 
+
+/*  footer  */ 
+.footerCont{
+    height: 40vh; 
+    width: 100%;
+    background-color: white; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+    border-top: 1px solid white;
+} 
+.cont1{ 
+    height: 10vh; 
+    width: 25vw;
+    background-color:#ffff; 
+    display: flex;
+} 
+.cont2{
+       width: 30vw; 
+       display: flex;  
+       justify-content: space-evenly;
+} 
+.text1{
+    text-transform: uppercase; 
+    font-weight: bold;
+} 
+
+
+
+/*  responsive design  */ 
+
+@media screen and (max-width:780px) {
+     .bgVideo{ 
+         height: 60vh;
+     } 
+     #getAppBtn{
+         top: 12vw; 
+         width: 30vw;
+     }
+}    
+
+@media screen and (max-width:545px) {
+   .body{
+      background-color: black;
+      width: 150vw;
+   }
+    .navbar{
+        width: 150vw !important;
+    }
+    .nav-link{
+        font-size: 10px !important;
+    }
+     .bgVideo{
+         height: 80vh; 
+         width: 150vw;
+     } 
+     .backVID{
+        width: 100%;
+     } 
+     .welcomePage{
+        width: 150vw; 
+
+     } 
+     .welFirstPage{
+        width: 100%;
+
+     }   
+     .welCont{ 
+        width: 100%;
+     } 
+     .welTitle{
+        font-size: 2rem;
+     }
+     #weDet{
+        font-size: 10px;
+     } 
+     /*  3 boxes  */ 
+     #welFirstPage{ 
+        height: 130vh;
+        display: flex; 
+        justify-content: space-evenly;
+        flex-direction: column; 
+
+     }  
+     .wel{
+         width: 100vw;
+         height:300px !important;
+        display: flex;
+        gap: 20px;
+        box-shadow:  1px 1px 1px 2px rgba(175, 175, 176, 0.877);
+        margin-top: 40px;
+        padding: 20px 10px;
+        justify-content: center;
+        text-align: center;
+     } 
+     .weltop{
+        font-size: 30px;
+        font-weight: 800;
+     }
+     .contBtn{
+        width: 100px;
+        height: 50px;
+        padding: 6px 10px;
+     } 
+
+     /*  player container  */ 
+     .PlayerCont{
+        margin-top: 300px;
+        padding-top: 200px;
+        width: 145vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+     } 
+     .PlayerImg{
+        height:250px; 
+        width: 250px;
+     } 
+     .title{
+        width: 150%;    
+        font-weight: 800;
+
+     }
+     .titleContent{
+        margin-left: -200px;
+        width: 130vw;
+        height: 150px;
+     }
+     #StreamBtn{
+        width: 35vw;
+     } 
+     /*  most popular page  */ 
+     .gameContainer{ 
+        width: 130vw;  
+        height: 300vh;
+        grid-template-columns: repeat(2,1fr);
+     } 
+     .game{
+         width: 50vw;
+     } 
+     .gameImg{
+        width: 150px;
+     } 
+     /*  library  */  
+     #libTitle{
+         font-size: 3rem;
+     }
+     #LibParent{
+           width: 150vw;
+           height: 100%;
+     } 
+     .LibContainer{
+        height: 100%;
+        margin: 20px 0px;
+        gap: 30px;
+     }
+     .lib{
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid white;
+        padding: 10px 30px;
+        box-shadow: 1px 1px 5px 2px rgba(255,255,255,1);
+    
+     }
+     .lib span{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+     }
+     .lib h3{
+        font-size: 20px;
+     }
+     .lib p{
+        font-size: 15px !important;
+     }
+     .DownBtn{
+        width: 150px; 
+        height: 50px;
+     }
+     .bg-color{
+        height: 50px;
+        width: 200px;
+        background-color: red;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        font-size: 20px;
+     }
+     /*  footer cont  */ 
+     .footerCont{
+        height: 270px !important;
+        width: 150vw !important; 
+        margin-top: 50px;
+        color: black;
+        font-size: 20px;   
+        background-color: rgba(255,255,255,1) !important;     
+     } 
+     #footer1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100% !important;
+        background-color: transparent !important;
+     }
+     #footer1 h1{
+        width: 250px !important;
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: 800;
+     }
+     .cont2{
+        width: 100% !important;
+        font-size: 20px;
+        display: flex;
+        justify-content: center !important;
+        gap: 10px;
+        padding-left: 30px ;
+     }
+     .text1{
+        font-size: 20px !important;
+     }
+     .cont3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+     }
+}    
